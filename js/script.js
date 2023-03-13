@@ -76,3 +76,35 @@ let swiper2 = new Swiper(".mySwiper2", {
         },
     },
 });
+
+// const anchors = document.querySelectorAll('a[href*="#"]')
+// for (let anchor of anchors) {
+//     anchor.addEventListener('click', function (event) {
+//         event.preventDefault()
+//         const blockID = anchor.getAttribute('href')
+//         document.querySelector('' + blockID).scrollIntoView({
+//             behavior: 'smooth',
+//             block: 'center'
+//         })
+//     })
+// }
+
+let yakor_1 = doc.querySelector('.yakor_1')
+let yakor_2 = doc.querySelector('.yakor_2')
+let yakor_3 = doc.querySelector('.yakor_3')
+let page_1 = doc.querySelector('.wrap__two__girls')
+let page_2 = doc.querySelector('.wrap__bags')
+let page_3 = doc.querySelector('.wrap__one__girl__img')
+
+yakor_1.addEventListener('click', (event) => {
+    event.preventDefault()
+    window.scrollTo({ top: page_1.offsetTop - 150, behavior: 'smooth' })
+})
+yakor_2.addEventListener('click', (event) => {
+    event.preventDefault()
+    window.scrollTo({ top: page_2.offsetTop - 210, behavior: 'smooth' })
+})
+yakor_3.addEventListener('click', (event) => {
+    event.preventDefault()
+    window.scrollTo({ top: page_3.offsetTop - 50, behavior: 'smooth' })
+})
