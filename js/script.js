@@ -94,7 +94,7 @@ let yakor_2 = doc.querySelector('.yakor_2')
 let yakor_3 = doc.querySelector('.yakor_3')
 let page_1 = doc.querySelector('.wrap__two__girls')
 let page_2 = doc.querySelector('.wrap__bags')
-let page_3 = doc.querySelector('.wrap__one__girl__img')
+let page_3 = doc.querySelector('.wrap__one__girl')
 
 yakor_1.addEventListener('click', (event) => {
     event.preventDefault()
@@ -106,5 +106,5 @@ yakor_2.addEventListener('click', (event) => {
 })
 yakor_3.addEventListener('click', (event) => {
     event.preventDefault()
-    window.scrollTo({ top: page_3.offsetTop - 50, behavior: 'smooth' })
+    window.scrollTo({ top: page_3.offsetTop - 100, behavior: 'smooth' })
 })
